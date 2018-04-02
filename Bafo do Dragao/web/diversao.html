@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Sample FirebaseUI App</title>
+        <!-- Script de Inicialização do seu projeto no Firebase -->
+        <!-- CDN BOOTSTRAP -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <!--FIM CDN-->
+        <!-- Scripts de Inicialização do seu projeto no Firebase -->
+        <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script><!--cliente firebase-->
+        <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase-auth.js"></script><!--Firebase Authentication (opcional)-->
+        <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase-database.js"></script><!--Firebase Realtime Database (opcional)-->
+        <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase-firestore.js"></script><!--Cloud Storage (opcional)-->
+        <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase-messaging.js"></script><!--Firebase Cloud Messaging (opcional)--> 
+        <!--Script que consome os dados do Json-->
+        <script type="text/javascript">
+            window.addEventListener('load', function () {//Essa função starta o APP automaticamente ao carregar a pagina
+                initApp();
+            });
+        </script>
+        <!--Fim do Script dados do Json-->
+    </head>
+    <body>
+        <div class="container">
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" id="oi"  src="" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title" >Oi! <span id="nome"></span></h5>
+                <p class="card-text">Seja bem-vindo amigo :).</p>
+                <a href="#" id="sair" class="btn btn-primary">Sair</a>
+            </div>
+        </div>
+
+
+        <div id="sign-in-status"></div>
+        <div id="sign-in"></div>
+        <div id="account-details"></div>
+        
+        </div>
+
+        <!--Script CDN-->
+        <!--CDN JQUERY-->
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <!-- SCRIPT LOCAL-->
+        <script src="./js/firebase.js"></script>
+    </body>
+</html>

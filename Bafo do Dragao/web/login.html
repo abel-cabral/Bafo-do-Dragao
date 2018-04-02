@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Central de Login</title>
+        <!-- Script de Inicialização do seu projeto no Firebase -->
+        <!-- CDN BOOTSTRAP -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <!--FIM CDN-->
+
+        <!-- Scripts de Inicialização do seu projeto no Firebase -->
+        <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script><!--cliente firebase-->
+        <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase-auth.js"></script><!--Firebase Authentication (opcional)-->
+        <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase-database.js"></script><!--Firebase Realtime Database (opcional)-->
+        <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase-firestore.js"></script><!--Cloud Storage (opcional)-->
+        <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase-messaging.js"></script><!--Firebase Cloud Messaging (opcional)-->
+
+        <!-- Fim do script de Inicialização-->
+        <script src="https://cdn.firebase.com/libs/firebaseui/2.7.0/firebaseui.js"></script>
+        <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/2.7.0/firebaseui.css" />
+    </head>
+    <body>
+        <h1>Olá Identifique-se para continuar</h1>
+        <div id="firebaseui-auth-container"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!--Script CDN-->
+        <!--CDN JQUERY-->
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <!-- SCRIPT LOCAL-->
+        <script src="./js/firebase.js"></script>
+
+            <!--Chamando Firebase Função de Login, obs tem que estar após o js que contem os scripts-->
+            <script>
+                var ui = new firebaseui.auth.AuthUI(firebase.auth());
+                ui.start('#firebaseui-auth-container', uiConfig);
+
+            </script>
+            <!--FIM Firebase Função de Login-->
+    </body>
+</html>
